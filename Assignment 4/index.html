@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment4</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.1.2/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.1.2/material.min.js"></script>
+</head>
+<body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <header class="mdl-layout__header">
+            <div class="mdl-layout__header-row">
+                <!-- Title -->
+                <span class="mdl-layout-title">Assignment 4</span>
+                <!-- Add spacer, to align navigation to the right -->
+                <div class="mdl-layout-spacer"></div>
+                <!-- Navigation. We hide it in small screens. -->
+                <nav class="mdl-navigation mdl-layout--large-screen-only">
+                    <a class="mdl-navigation__link" href="">List of Actors</a>
+                </nav>
+            </div>
+        </header>
+        <div class="mdl-layout__drawer">
+            <span class="mdl-layout-title">Assignment 4</span>
+            <nav class="mdl-navigation">
+                <a class="mdl-navigation__link" href="">List of Actors</a>
+            </nav>
+        </div>
+        <main class="mdl-layout__content">
+            <div class="page-content">
+                <div class="mdl-grid">
+                    <div class="mdl-cell mdl-cell--5-offset-desktop mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--2-offset-tablet mdl-cell--1-offset-phone">
+                        <h3>List of Actors</h3>
+                    </div>
+                </div>
+                <div class="mdl-grid">
+                    <div class="mdl-cell mdl-cell--4-offset-desktop mdl-cell--2-col mdl-cell--4-col-tablet mdl-cell--1-offset-tablet mdl-cell--1-offset-phone txtfld">
+                        <form action="#">
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <input class="mdl-textfield__input" type="text" id="textIp">
+                                <label class="mdl-textfield__label" for="textIp">Actor's name...</label>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="mdl-cell mdl-cell--1-col mdl-cell--1-col-tablet mdl-cell--1-col-desktop mdl-cell--1-offset-desktop">
+                        <button id="add" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+                            <i class="material-icons">add</i>
+                        </button>
+                    </div>
+                </div>
+                <div class="mdl-grid">
+                    <div class="mdl-cell mdl-cell--3-offset-desktop mdl-cell--6-col mdl-cell--8-col-tablet">
+                        <div class="demo-list-action mdl-list" id="actors">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

@@ -114,8 +114,10 @@ var main = function(toDoObjects) {
                             return toDo.description;
                         });
                         socket.emit("new-todo", newToDo);
+						
                         $input.val("");
                         $tagInput.val("");
+						
                     });
 
                 });
@@ -134,7 +136,7 @@ var main = function(toDoObjects) {
     });
 	
 	socket.on("update-todo", function(data) {
-        console.log("client on new-todo");
+
         var $new = $("#newTodo");
         var $content = $("main .content");
         var $old = $("#oldTodo");
@@ -156,7 +158,8 @@ var main = function(toDoObjects) {
         }
         /*SlideDown effect for every update*/
         $newItem.slideDown(500);
-
+		alert("New todo added.");
+		
         $.getJSON("todos.json", function(newToDoObjects) {
             toDoObjects = newToDoObjects;
             toDos = newToDoObjects.map(function(toDo) {

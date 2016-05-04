@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+    <title>Amazeriffic!</title>
+    <link href="stylesheets/style.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+<header>
+    <div class="container">
+        <h1>Amazeriffic!</h1>
+        <nav>
+            <a href="#">Sign Up!</a> |
+            <a href="#">FAQ</a> |
+            <a href="#">Support</a>
+        </nav>
+    </div>
+</header>
+
+
+<main>
+    <div class="container">
+        <div class="tabs" data-bind="foreach: tabs">
+            <a href=""><span data-bind="text: $data,
+            click: $parent.userClick.bind($data)
+            ,css: $parent.selectedTab() == $data ? 'active': ''"></span></a>
+        </div>
+
+        <ul class="content" data-bind="visible: isNewestSelected(),
+            foreach: toDoObjects.slice(0).reverse()">
+            <li data-bind="text: $data"></li>
+        </ul>
+        <ul class="content" data-bind="visible: isOldestSelected()
+            ,foreach: toDoObjects">
+            <li data-bind="text: $data"></li>
+        </ul>
+        <div class="content tags" data-bind="visible: isTagsSelected()">
+            <!--<div data-bind="foreach: tagObjects">
+
+                <h3 data-bind="text: $data.name"></h3>
+
+                <ul data-bind="foreach: $data.toDos">
+                    <li data-bind="text: $data"></li>
+                </ul>
+
+            </div>-->
+        </div>
+        <div class="content" data-bind="visible: isAddSelected()">
+            <p>Description:</p>
+            <input data-bind="value: description">
+            <p>Tag:</p>
+            <input data-bind="value: tag">
+            <span data-bind="click: add">+</span>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="container">
+        <div class="contact">
+            <h5>Contact Us</h5>
+            <p>Amazeriffic!</p>
+            <p>555 Fiftieth Street</p>
+            <p>Asheville, NC 28801</p>
+        </div>
+        <div class="sitemap">
+            <h5>Sitemap</h5>
+            <ul>
+                <div class="left">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Privacy</a></li>
+                </div>
+                <div class="right">
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Careers</a></li>
+                </div>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+<script src="javascripts/jquery-2.2.0.js"></script>
+<script src="javascripts/knockout-3.4.0.js"></script>
+<script src="javascripts/client.js"></script>
+</body>
+</html>

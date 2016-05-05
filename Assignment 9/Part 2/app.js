@@ -25,6 +25,7 @@ var ToDoSchema = mongoose.Schema({
 var ToDo = mongoose.model("ToDo", ToDoSchema);
 
 http.createServer(app).listen(3000);
+console.log("Server is running on port 3000");
 
 app.get("/todos.json", function (req, res) {
     ToDo.find({}, function (err, toDos) {

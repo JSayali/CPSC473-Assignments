@@ -3,11 +3,11 @@ Repository for CPSC 473 weekly assignments
 
 ###Assignment 5 
 
-1.Download complete Assignment 5 folder from https://github.com/JSayali/CPSC473-Assignments/tree/master/Assignment%205.
-2.Place the folder on class virtual machine.
-3.Start the server using node server.js command
-4.Server will start running on http://localhost:3000/
-5.Postman or cURL command can be used to test the API.
+1. Download complete Assignment 5 folder from https://github.com/JSayali/CPSC473-Assignments/tree/master/Assignment%205.
+2. Place the folder on class virtual machine.
+3. Start the server using node server.js command
+4. Server will start running on http://localhost:3000/
+5. Postman or cURL command can be used to test the API.
 
 ###Assignment 6
 

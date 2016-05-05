@@ -46,12 +46,12 @@ Access application using URL: http://localhost:3000/
 Assignment 9
 
 Part 1: 
-Download the Assignment 9 - Part 1 folder on local machine
+Download the Assignment 9 - Part 1 folder from https://github.com/JSayali/CPSC473-Assignments/tree/master/Assignment%209/Part%201 on local machine
 cd Part 1
 Open index.html file in browser
 
 Part 2:
-Download the Assignment 9 - Part 2 folder and place it in /home/vagrant directory on class virtual machine
+Download the Assignment 9 - Part 2 folder from https://github.com/JSayali/CPSC473-Assignments/tree/master/Assignment%209/Part%202 and place it in /home/vagrant directory on class virtual machine
 cd Part 2
 Install dependencies using 'npm install' command
 Make sure MongoDB data directory is present on your home directory on virtual machine.

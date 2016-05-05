@@ -2,6 +2,7 @@
 Repository for CPSC 473 weekly assignments
 
 Assignment 5 
+
 Download complete Assignment 5 folder from https://github.com/JSayali/CPSC473-Assignments/tree/master/Assignment%205.
 Place the folder on class virtual machine.
 Start the server using node server.js command
@@ -16,7 +17,8 @@ Download the files from https://github.com/JSayali/CPSC473-Assignments/tree/mast
 Start the server using node index.js command
 Server will start running on http://localhost:3000/
 Postman or cURL commands can be used to test the API.
-Assignment 7 - README
+
+Assignment 7
 
 Open ssh session.
 Create MongoDB directory and start the server using following commands
@@ -33,12 +35,12 @@ Postman or cURL command can be used to test the API.
 Assignment 8
 
 Download complete Assignment 8 folder from https://github.com/JSayali/CPSC473-Assignments/tree/master/Assignment%208
-Place it in /home/vagrant/ directory on class virtual machine
-'cd Assignment 8'
+Place it in /home/vagrant/ directory on class virtual machine.
+cd Assignment 8
 install all dependencies using 'npm install' command
 Make sure MongoDB data directory is present on your home directory on virtual machine. 
 MongoDB url is mongodb://localhost/test
-'foreman start'
+foreman start
 Access application using URL: http://localhost:3000/
 
 Assignment 9
@@ -53,5 +55,5 @@ Download the Assignment 9 - Part 2 folder and place it in /home/vagrant director
 cd Part 2
 Install dependencies using 'npm install' command
 Make sure MongoDB data directory is present on your home directory on virtual machine.
-'foreman start'
+foreman start
 Access application using URL: http://localhost:3000/

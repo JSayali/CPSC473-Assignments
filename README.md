@@ -1,7 +1,7 @@
 # CPSC473-Assignments
 Repository for CPSC 473 weekly assignments
 
-#Assignment 5 
+##Assignment 5 
 
 1.Download complete Assignment 5 folder from https://github.com/JSayali/CPSC473-Assignments/tree/master/Assignment%205.
 2.Place the folder on class virtual machine.
